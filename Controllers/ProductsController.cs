@@ -41,6 +41,13 @@ namespace FourthTemplateforfoodordering.Controllers
 
             return View(product);
         }
+        //public IActionResult ListOfProducts(string CategoryName)
+        //{
+        //    List<Product> result = (from i in _context.Products
+        //                            where i.CategoryName == CategoryName
+        //                            select i).ToList();
+        //    return View(result);
+        //}
 
         // GET: Products/Create
         public IActionResult Create()
