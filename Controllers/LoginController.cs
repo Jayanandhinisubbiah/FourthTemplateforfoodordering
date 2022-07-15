@@ -62,7 +62,7 @@ namespace FourthTemplateforfoodordering.Controllers
         public IActionResult AdminLogin(User U)
         {
 
-            return RedirectToAction("Index", "Home");// Admin Panel should come 
+            return RedirectToAction("Index","Products");// Admin Panel should come 
 
         }
     }
