@@ -12,6 +12,12 @@ namespace FourthTemplateforfoodordering.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        //private readonly FoodContext _context;
+
+        //public HomeController(FoodContext context)
+        //{
+        //    _context = context;
+        //}
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -22,6 +28,7 @@ namespace FourthTemplateforfoodordering.Controllers
         {
             return View();
         }
+       
 
         public IActionResult Privacy()
         {

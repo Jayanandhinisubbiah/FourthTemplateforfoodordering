@@ -46,7 +46,7 @@ namespace FourthTemplateforfoodordering.Controllers
         //    List<Product> result = (from i in _context.Products
         //                            where i.CategoryName == CategoryName
         //                            select i).ToList();
-        //    return View(result);
+        //    return View(result.ToList());
         //}
 
         // GET: Products/Create
