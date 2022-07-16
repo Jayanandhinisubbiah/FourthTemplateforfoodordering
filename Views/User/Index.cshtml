@@ -50,7 +50,7 @@
                 @Html.DisplayFor(modelItem => item.CategoryName)
             </td>
             <td>
-                <a asp-action="" asp-controller="">Add to cart</a> 
+                <a asp-action="Buy" asp-route-FoodId="@item.FoodId">Buy</a> 
             </td>
         </tr>
 }
