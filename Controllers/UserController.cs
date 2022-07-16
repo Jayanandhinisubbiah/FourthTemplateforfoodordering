@@ -36,5 +36,25 @@ namespace FourthTemplateforfoodordering.Controllers
             return View();
 
         }
+        [HttpPost]
+        public IActionResult Payment(OrderMaster O)
+        {
+           
+            fd.OrderMasters.Add(O);
+            fd.SaveChanges();
+            return RedirectToAction("Online");
+        }
+        //public IActionResult Online()
+        //{
+        //    return View();
+        //}
+        //[HttpPost]
+        //public IActionResult Online(OrderMaster OM)
+        //{
+        //    fd.OrderMasters.Add(OM);
+        //    fd.SaveChanges();
+        //    return RedirectToAction("Index"); // Thank has to come
+        //}
+
     }
 }

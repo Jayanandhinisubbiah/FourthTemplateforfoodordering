@@ -1,31 +1,21 @@
 ﻿@model FourthTemplateforfoodordering.Models.OrderMaster
 
 @{
-    ViewData["Title"] = "Payment";
+    ViewData["Title"] = "Online";
 }
 
-<h1>Payment Checkout</h1>
+<h1>Payment CheckOut</h1>
 
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Payment">
-
-             Amount:@ViewBag.Price
+        <form asp-action="Online">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             
-             <div class="form-group">
-            </div>
-           
+            
             <div class="form-group">
                 <label asp-for="BankName" class="control-label"></label>
-                @*<input asp-for="BankName" class="form-control" />*@
-                 <select asp-for="BankName" class="form-control" >  
-    <option >SBI</option>  
-    <option >Kotak Mahindra</option>  
-    <option >CUB</option> 
-     <option >State Bank</option>
-</select>
+                <input asp-for="BankName" class="form-control" />
                 <span asp-validation-for="BankName" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -48,8 +38,8 @@
 
 @*<div>
     <a asp-action="Index">Back to List</a>
-</div>*@
+</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+}*@
