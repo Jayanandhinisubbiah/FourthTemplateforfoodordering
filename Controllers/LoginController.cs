@@ -41,7 +41,8 @@ namespace FourthTemplateforfoodordering.Controllers
                           select i).SingleOrDefault();
             if (result != null)
             {
-                //HttpContext.Session.SetString("UserName", result.FName);
+                HttpContext.Session.SetString("UserName", result.FName);
+                //HttpContext.Session.SetString("UserName", result.UserName);
                 return RedirectToAction("Index", "User");// Category in front UI
             }
             else

@@ -30,7 +30,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="Image" class="control-label"></label>
-               <input asp-for="Image" type="file" class="form-control" />
+               @*<input asp-for="Image" type="file" class="form-control" />*@
+               <img src="~/css/@Model.Image" alt="no data" height="100" width="100"/>
                 <span asp-validation-for="Image" class="text-danger"></span>
             </div>
             <div class="form-group">

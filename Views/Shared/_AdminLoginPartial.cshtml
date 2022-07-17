@@ -1,0 +1,16 @@
+﻿ @using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+<ul class="navbar-nav">
+     
+
+
+  <li class="nav-item">
+        <a  class="nav-link text-dark"  title="manage">Welcome Back Admin</a>
+    </li>
+    <li class="nav-item">
+        <form  class="form-inline"> @*asp-area="identity" asp-page="/account/logout" asp-route-returnurl="@url.action("index", "home", new { area = "" })">*@
+            <button  type="submit" class="nav-link btn btn-link text-dark" asp-controller="Login" asp-action="Logout">Logout</button>
+        </form>
+    </li>
+
+</ul>
