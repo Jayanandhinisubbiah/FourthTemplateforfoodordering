@@ -55,10 +55,12 @@
                 <a asp-action="Edit" asp-route-id="@item.FoodId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.FoodId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.FoodId">Delete</a>|
-                 @*<a asp-action="ListOfProducts" asp-route-id="@item.FoodId">List</a> |*@
+                
             </td>
         </tr>
 }
     </tbody>
 </table>
-     
+   <form asp-action="Orders" asp-controller="Admin">
+        <input type="submit" value="Payment Report" class="btn btn-danger" /> 
+    </form>  
