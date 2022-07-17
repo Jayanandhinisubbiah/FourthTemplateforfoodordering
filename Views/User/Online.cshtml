@@ -1,45 +1,9 @@
-﻿@model FourthTemplateforfoodordering.Models.OrderMaster
-
-@{
-    ViewData["Title"] = "Online";
-}
-
-<h1>Payment CheckOut</h1>
-
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Online">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-            
-            <div class="form-group">
-                <label asp-for="BankName" class="control-label"></label>
-                <input asp-for="BankName" class="form-control" />
-                <span asp-validation-for="BankName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CardNo" class="control-label"></label>
-                <input asp-for="CardNo" class="form-control" />
-                <span asp-validation-for="CardNo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CCV" class="control-label"></label>
-                <input asp-for="CCV" class="form-control" />
-                <span asp-validation-for="CCV" class="text-danger"></span>
-            </div>
-           
-            <div class="form-group">
-                <input type="submit" value="Pay Now" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+﻿
+<div class="jumbotron text-center">
+  <h1 class="display-3">Thank You!</h1>
+  <hr>
+  
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" asp-controller="User" asp-action="Index" role="button">Continue Shopping</a>
+  </p>
 </div>
-
-@*<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}*@

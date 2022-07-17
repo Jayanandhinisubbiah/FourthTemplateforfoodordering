@@ -44,10 +44,10 @@ namespace FourthTemplateforfoodordering.Controllers
             fd.SaveChanges();
             return RedirectToAction("Online");
         }
-        //public IActionResult Online()
-        //{
-        //    return View();
-        //}
+        public IActionResult Online()
+        {
+            return View();
+        }
         //[HttpPost]
         //public IActionResult Online(OrderMaster OM)
         //{

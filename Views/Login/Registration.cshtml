@@ -8,72 +8,99 @@
 
 <h4>User</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Registration">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FName" class="control-label">First Name</label>
-                <input asp-for="FName" class="form-control" />
+ <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1920&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=c0d43804e2c7c93143fe8ff65398c8e9);">
+        <div class="container-fluid">
+          <div class="row  justify-content-center align-items-center d-flex-row text-center h-100">
+            <div class="col-12 col-md-4 col-lg-3   h-50 ">
+              <div class="card shadow">
+                <div class="card-body mx-auto">
+                
+                  <form asp-action="Registration">
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                      </div>
+                <input asp-for="FName" placeholder="First name"class="form-control" />
                 <span asp-validation-for="FName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                  <label asp-for="LName" class="control-label">Last Name</label>
-                <input asp-for="LName" class="form-control" />
+                    </div>
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                      </div>
+                <input asp-for="LName" placeholder="Last name"class="form-control" />
                 <span asp-validation-for="LName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Mobile" class="control-label">Mobile</label>
-                <input asp-for="Mobile" class="form-control" />
+                    </div>
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                      </div>
+                      <input asp-for="Mobile" placeholder="Mobile Number"class="form-control" />
                 <span asp-validation-for="Mobile" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Gender" class="control-label">Gender</label>
-    @Html.RadioButtonFor(model => model.Gender, "Male") 
+                    </div>
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                      </div>
+                    @Html.RadioButtonFor(model => model.Gender, "Male") 
      Male 
     @Html.RadioButtonFor(model => model.Gender, "Female")
     Female
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label">Address</label>
-                <input asp-for="Address" class="form-control" />
+                    </div>
+                     <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                      </div>
+                     <input asp-for="Address" placeholder="Address" class="form-control" />
                 <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-               <label asp-for="City" class="control-label">City</label>
-                <input asp-for="City" class="form-control" />
+                    </div>
+                     <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                      </div>
+                       <input asp-for="City" placeholder="City"class="form-control" />
                 <span asp-validation-for="City" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Pincode" class="control-label">Pincode</label>
-                <input asp-for="Pincode" class="form-control" />
+                    </div>
+                     <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                      </div>
+                      <input asp-for="Pincode" placeholder="Pin Code"class="form-control" />
                 <span asp-validation-for="Pincode" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label">Email</label>
-                <input asp-for="Email" class="form-control" />
+                    </div>
+                     <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                      </div>
+                     <input asp-for="Email" placeholder="Email"class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label">Password</label>
-                <input asp-for="Password" type="password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-             <div class="form-group">
-                <label asp-for="CPassword" class="control-label">Confirm Password</label>
-                <input asp-for="CPassword" type="password" class="form-control" />
-                <span asp-validation-for="CPassword" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Register Now" class="btn btn-success" />
-            </div>
-        </form>
-    </div>
-</div>
+                    </div>
+                     <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                      </div>
 
-<div>
-    Already Register,Please Login <a asp-action="Login">Here</a>
-</div>
+                     <input asp-for="Password" type="password"placeholder="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                     <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                      </div>
+                      <input asp-for="CPassword" type="password" placeholder="Confirm Password"class="form-control" />
+                <span asp-validation-for="CPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                     <input type="submit" value="Register Now" class="btn btn-success" />
+                    </div>
+                    <p class="text-center">  
+ Already Register,Please Login <a asp-action="Login">Here</a>                  </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -27,7 +27,7 @@ namespace FourthTemplateforfoodordering.Controllers
         {
             fd.Users.Add(U);
             fd.SaveChanges();
-            return RedirectToAction("Index", "Home");// Have to give the redirection page
+            return RedirectToAction("Index", "User");// Have to give the redirection page
         }
         public IActionResult Login()
         {
